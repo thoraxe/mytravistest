@@ -1,6 +1,6 @@
 language: ruby
 install:
-  - echo "installing things"
+  - echo "nothing to see here"
 script:
-  - echo "buildy things"
-  
+  - [ 1 == 0 ]
+  - echo "may or may not work"
