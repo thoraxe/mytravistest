@@ -2,7 +2,7 @@
 set -x
 
 # login to qwiklab and get token
-curl google.com
+curl "$TEST_INSIDE_BASH"
 
 echo "start lab instance"
 
