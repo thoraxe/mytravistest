@@ -1,0 +1,6 @@
+language: ruby
+install:
+  - echo "installing things"
+script:
+  - echo "buildy things"
+  
