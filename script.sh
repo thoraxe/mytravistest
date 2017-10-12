@@ -3,6 +3,7 @@
 set -e
 
 # start lab instance and store its details into a json file
+echo "starting lab instance"
 curl -s -X POST -H "Content-Type: application/json" \
 -d '{ "auth_token": "'$QWIKLAB_API_TOKEN'", "focus": { "id": "70"} }' \
 https://redhat.qwiklab.com/api/v1/focuses/run_lab/ > lab_details.json
@@ -21,7 +22,7 @@ do
   let COUNTER=COUNTER+1 
 done
 
-echo "wait up to 5 minutes for lab instance to provision"
+echo "wait up to 5 more minutes for lab instance to provision"
 COUNTER=1
 SUCCESS=0
 while [ $COUNTER -lt 5 ]
