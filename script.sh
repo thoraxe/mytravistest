@@ -13,6 +13,9 @@ export LAB_ID=`cat lab_details.json  | jq .response.id`
 export ACCOUNT_NUMBER=`cat lab_details.json | jq -r .response.aws_account_number`
 export MASTER_URL="master.$ACCOUNT_NUMBER.aws.testdrive.openshift.com"
 
+echo "Lab ID: $LAB_ID"
+echo "Master URL: $MASTER_URL"
+
 echo "wait 8 minutes always before starting to check"
 COUNTER=1
 while [ $COUNTER -lt 8 ]
