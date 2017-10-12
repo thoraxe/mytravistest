@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x
+#set -x
 
 # start lab instance and store its details into a json file
 curl -s -X POST -H "Content-Type: application/json" \
