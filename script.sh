@@ -17,6 +17,7 @@ while [ $COUNTER -lt 5 ]
 do
   sleep 60
   echo "minute $COUNTER..."
+  let COUNTER=COUNTER+1 
 done
 
 echo "wait up to 5 minutes for lab instance to provision"
